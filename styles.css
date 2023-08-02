@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  height: 500px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+body main .box {
+  padding: 3em;
+  height: 100%;
+}
+body main .box .title {
+  font-family: "Big Shoulders Display", cursive;
+  color: white;
+  text-transform: uppercase;
+  padding: 1em 0;
+}
+body main .box .paragraph {
+  line-height: 1.5;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  margin-bottom: 80px;
+}
+body main .box .btn {
+  padding: 14px 30px;
+  background-color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: "Lexend Deca", sans-serif;
+}
+body main .box.box2 .paragraph {
+  margin-bottom: 100px;
+}
+
+.box1 {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.box2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.box3 {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.btn1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn3 {
+  color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    min-height: 100vh;
+  }
+  body main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-block: 3em;
+    padding-inline: 1em;
+  }
+}/*# sourceMappingURL=styles.css.map */

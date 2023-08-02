@@ -1,0 +1,13 @@
+@media screen and (max-width: 900px){
+    body{
+        min-height: 100vh;
+        main{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding-block: 3em;
+            padding-inline: 1em;
+            
+        }
+    }
+}

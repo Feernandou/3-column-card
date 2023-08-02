@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        max-width: 900px;
+        height: 500px;
+        border-radius: 8px;
+        overflow: hidden;
+        .box{
+            padding: 3em;
+            height: 100%;
+            .title{
+                font-family: $fontTitle;
+                color: white;
+                text-transform: uppercase;
+                padding: 1em 0;
+            }
+            .paragraph{
+                line-height: 1.5;
+                font-family: $font;
+                color: $white;
+                font-family: $font;
+                margin-bottom: 80px;
+
+            }
+            .btn{
+                padding: 14px 30px;
+                background-color: white;
+                text-decoration: none;
+                border-radius: 30px;
+                font-family: $font;
+                
+            }
+            &.box2{
+                .paragraph{
+                    margin-bottom: 100px;
+                }
+            }
+        }
+        
+    }
+}
+@each $key, $value in $boxColors{
+    .box#{$key}{
+        background-color: $value;
+    }
+}
+@each $key,$value in $boxColors{
+    .btn#{$key}{
+        color: $value;
+    }
+}
